@@ -1,0 +1,23 @@
+{
+  "name": "vaahincodecept",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "./node_modules/.bin/codeceptjs run-multiple --all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vaahin/Codeceptjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vaahin/Codeceptjs/issues"
+  },
+  "homepage": "https://github.com/Vaahin/Codeceptjs#readme",
+  "devDependencies": {
+    "codeceptjs": "^1.4.3",
+    "webdriverio": "^4.13.2"
+  }
+}
