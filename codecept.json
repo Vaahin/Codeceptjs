@@ -2,36 +2,39 @@
   "tests": "./end2end/tests/web/headerMenu_01_test.js",
   "output": "./output",
   "multiple": {
-    "browsers": [
-      {
-        "desiredCapabilities": {
-          "browserName": "safari",
-          "browserstack.os": "OS X",
-          "browserstack.os_version": "High Sierra",
-          "windowSize": "maximize",
-          "browserstack.local": false,
-          "browserstack.video": true,
-          "ignoreHTTPSErrors": true,
-          "acceptInsecureCerts": true,
-          "acceptInvalidCerts": true,
-          "acceptSslCerts": true
+    "basic": {
+      "browsers": [
+        "chrome",
+        {
+          "desiredCapabilities": {
+            "browserName": "safari",
+            "browserstack.os": "OS X",
+            "browserstack.os_version": "High Sierra",
+            "windowSize": "maximize",
+            "browserstack.local": false,
+            "browserstack.video": true,
+            "ignoreHTTPSErrors": true,
+            "acceptInsecureCerts": true,
+            "acceptInvalidCerts": true,
+            "acceptSslCerts": true
+          }
+        },
+        {
+          "desiredCapabilities": {
+            "browserName": "chrome",
+            "browserstack.os": "OS X",
+            "browserstack.os_version": "High Sierra",
+            "windowSize": "maximize",
+            "browserstack.local": false,
+            "browserstack.video": true,
+            "ignoreHTTPSErrors": true,
+            "acceptInsecureCerts": true,
+            "acceptInvalidCerts": true,
+            "acceptSslCerts": true
+          }
         }
-      },
-      {
-        "desiredCapabilities": {
-          "browserName": "chrome",
-          "browserstack.os": "OS X",
-          "browserstack.os_version": "High Sierra",
-          "windowSize": "maximize",
-          "browserstack.local": false,
-          "browserstack.video": true,
-          "ignoreHTTPSErrors": true,
-          "acceptInsecureCerts": true,
-          "acceptInvalidCerts": true,
-          "acceptSslCerts": true
-        }
-      }
-    ]
+      ]
+    }
   },
   "helpers": {
     "WebDriverIO": {
@@ -40,13 +43,6 @@
       "user": "thiru71",
       "key": "s57kt6jsUMUM2jHqunn8",
       "desiredCapabilities": {
-        "browser": "safari",
-        "browserstack.os": "OS X",
-        "browserstack.os_version": "High Sierra",
-        "windowSize": "maximize",
-        "browserstack.local": false,
-        "browserstack.video": true,
-        "ignoreHTTPSErrors": true,
         "acceptInsecureCerts": true,
         "acceptInvalidCerts": true,
         "acceptSslCerts": true
