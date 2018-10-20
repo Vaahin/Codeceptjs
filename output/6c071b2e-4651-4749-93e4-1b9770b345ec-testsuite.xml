@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539867514919' stop='1539867559984'>
+    <name>Order:</name>
+    <title>Order:</title>
+    <test-cases>
+        <test-case start='1539867514920' status='failed' stop='1539867547199'>
+            <name>Place a Delivery Order</name>
+            <title>Place a Delivery Order</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1539867536356' status='passed' stop='1539867541612'>
+                    <name>Context: Before </name>
+                    <title>Context: Before </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539867536356' status='passed' stop='1539867538050'>
+                            <name>I am on page "/"</name>
+                            <title>I am on page "/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539867541612' status='passed' stop='1539867542192'>
+                    <name>homePage: clickSignIn </name>
+                    <title>homePage: clickSignIn </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539867541612' status='passed' stop='1539867542192'>
+                            <name>I click {"xpath":"(//div[contains(@class,'account')]//following-sibling::a)[1]"}</name>
+                            <title>I click {"xpath":"(//div[contains(@class,'account')]//following-sibling::a)[1]"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539867542192' status='failed' stop='1539867547199'>
+                    <name>loginPage: removeMonetatePopUp </name>
+                    <title>loginPage: removeMonetatePopUp </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539867542192' status='passed' stop='1539867542192'>
+                            <name>I is element visible "#monetate_lightbox"</name>
+                            <title>I is element visible "#monetate_lightbox"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539867542193' status='failed' stop='1539867547199'>
+                            <name>I wait for element "#monetate_lightbox", 5</name>
+                            <title>I wait for element "#monetate_lightbox", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='b211cb90-73cc-433a-8bbe-83acb76c9891-attachment.png' type='image/png' size='481539'/>
+            </attachments>
+            <failure>
+                <message>element (#monetate_lightbox) still not present on page after 5 sec</message>
+                <stack-trace>Error: element (#monetate_lightbox) still not present on page after 5 sec
+                    at new WaitUntilTimeoutError (/usr/local/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:149:12)
+                    at /usr/local/lib/node_modules/webdriverio/build/lib/commands/waitUntil.js:29:19
+                    at &lt;anonymous></stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539876243201' stop='1539876275926'>
+    <name>Order:</name>
+    <title>Order:</title>
+    <test-cases>
+        <test-case start='1539876243202' status='failed' stop='1539876261466'>
+            <name>Place a Collection Order</name>
+            <title>Place a Collection Order</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1539876249081' status='failed' stop='1539876261466'>
+                    <name>Context: Before </name>
+                    <title>Context: Before </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539876249081' status='passed' stop='1539876261466'>
+                            <name>I am on page "/"</name>
+                            <title>I am on page "/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='f3bff815-c6a7-460b-8790-1cbd3a5ad012-attachment.png' type='image/png' size='97140'/>
+            </attachments>
+            <failure>
+                <message>homePage is not defined</message>
+                <stack-trace>ReferenceError: homePage is not defined
+                    at Context.Before (/Users/tputvmoh/Downloads/codecept/end2end/tests/web/collectionOrder_01_test.js:5:3)
+                    at Context.&lt;anonymous> (/usr/local/lib/node_modules/codeceptjs/lib/scenario.js:150:10)
+                    at callFnAsync (/usr/local/lib/node_modules/codeceptjs/node_modules/mocha/lib/runnable.js:377:21)
+                    at Hook.Runnable.run (/usr/local/lib/node_modules/codeceptjs/node_modules/mocha/lib/runnable.js:324:7)
+                    at next (/usr/local/lib/node_modules/codeceptjs/node_modules/mocha/lib/runner.js:304:10)
+                    at /usr/local/lib/node_modules/codeceptjs/node_modules/mocha/lib/runner.js:329:7
+                    at done (/usr/local/lib/node_modules/codeceptjs/node_modules/mocha/lib/runnable.js:301:5)
+                    at /usr/local/lib/node_modules/codeceptjs/node_modules/mocha/lib/runnable.js:359:11
+                    at &lt;anonymous>
+                    at process._tickDomainCallback (internal/process/next_tick.js:228:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

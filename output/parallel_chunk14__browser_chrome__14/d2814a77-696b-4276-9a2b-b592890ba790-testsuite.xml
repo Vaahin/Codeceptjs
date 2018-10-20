@@ -1,0 +1,531 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539812331939' stop='1539812375343'>
+    <name>Order:</name>
+    <title>Order:</title>
+    <test-cases>
+        <test-case start='1539812331940' status='passed' stop='1539812362206'>
+            <name>Place a Collection Order</name>
+            <title>Place a Collection Order</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1539812336740' status='passed' stop='1539812337703'>
+                    <name>Context: Before </name>
+                    <title>Context: Before </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812336740' status='passed' stop='1539812337703'>
+                            <name>I am on page "/shop/InitiateLogin"</name>
+                            <title>I am on page "/shop/InitiateLogin"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812337703' status='passed' stop='1539812338479'>
+                    <name>loginPage: removeMonetatePopUp </name>
+                    <title>loginPage: removeMonetatePopUp </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812337703' status='passed' stop='1539812337703'>
+                            <name>I is element visible "#monetate_lightbox"</name>
+                            <title>I is element visible "#monetate_lightbox"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812337704' status='passed' stop='1539812338403'>
+                            <name>I wait for element "#monetate_lightbox", 5</name>
+                            <title>I wait for element "#monetate_lightbox", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812338403' status='passed' stop='1539812338478'>
+                            <name>I execute script function () {
+                                    document.getElementById("monetate_lightbox").remove();
+                                  }</name>
+                            <title>I execute script function () {
+                                    document.getElementById("monetate_lightbox").remove();
+                                  }</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812338479' status='passed' stop='1539812341796'>
+                    <name>loginPage: login </name>
+                    <title>loginPage: login </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812338479' status='passed' stop='1539812339481'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812339482' status='passed' stop='1539812339914'>
+                            <name>I fill field {"xpath":"input[type=email]"}, "sampletestlogin14@wtr-test.net"</name>
+                            <title>I fill field {"xpath":"input[type=email]"}, "sampletestlogin14@wtr-test.net"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812339914' status='passed' stop='1539812340152'>
+                            <name>I click "Continue"</name>
+                            <title>I click "Continue"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812340152' status='passed' stop='1539812340309'>
+                            <name>I wait for visible "#logon-password", 5</name>
+                            <title>I wait for visible "#logon-password", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812340311' status='passed' stop='1539812340575'>
+                            <name>I fill field "#logon-password", "test1234"</name>
+                            <title>I fill field "#logon-password", "test1234"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812340575' status='passed' stop='1539812341576'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812341576' status='passed' stop='1539812341784'>
+                            <name>I click "#logon-button-sign-in"</name>
+                            <title>I click "#logon-button-sign-in"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812341796' status='passed' stop='1539812344704'>
+                    <name>homePage: clickShoppingLink </name>
+                    <title>homePage: clickShoppingLink </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812341796' status='passed' stop='1539812344034'>
+                            <name>I wait for element "xpath: //a[contains(@class,'shopWindow') and contains(@href,'groceries') and not(contains(@href,'christmas'))]", 5</name>
+                            <title>I wait for element "xpath: //a[contains(@class,'shopWindow') and contains(@href,'groceries') and not(contains(@href,'christmas'))]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812344035' status='passed' stop='1539812344703'>
+                            <name>I execute script function (menuLink) {
+                                  document.querySelectorAll("[alt='" + menuLink + "']")[0].click();
+                                }, "Groceries"</name>
+                            <title>I execute script function (menuLink) {
+                                  document.querySelectorAll("[alt='" + menuLink + "']")[0].click();
+                                }, "Groceries"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812344704' status='passed' stop='1539812347125'>
+                    <name>groceriesPage: clickGroceriesMegamenu </name>
+                    <title>groceriesPage: clickGroceriesMegamenu </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812344704' status='passed' stop='1539812346668'>
+                            <name>I wait for element {"xpath":"//span[contains(@class,'name')]/following::button[contains(@class,'primary')]"}, 5</name>
+                            <title>I wait for element {"xpath":"//span[contains(@class,'name')]/following::button[contains(@class,'primary')]"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812346668' status='passed' stop='1539812346747'>
+                            <name>I wait for element "#site-header-browse-groceries", 5</name>
+                            <title>I wait for element "#site-header-browse-groceries", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812346747' status='passed' stop='1539812347043'>
+                            <name>I click "#site-header-browse-groceries"</name>
+                            <title>I click "#site-header-browse-groceries"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812347043' status='passed' stop='1539812347125'>
+                            <name>I wait for element {"xpath":"//article[contains(@class,'menuLinksList')]"}, 5</name>
+                            <title>I wait for element {"xpath":"//article[contains(@class,'menuLinksList')]"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812347125' status='passed' stop='1539812348068'>
+                    <name>groceriesPage: clickMegaMenuLink </name>
+                    <title>groceriesPage: clickMegaMenuLink </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812347125' status='passed' stop='1539812347197'>
+                            <name>I wait for element {"xpath":"//span[text()='Fresh &amp; Chilled']"}, 5</name>
+                            <title>I wait for element {"xpath":"//span[text()='Fresh &amp; Chilled']"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812347198' status='passed' stop='1539812347349'>
+                            <name>I execute script function (linktext) {
+                                  document.querySelectorAll("[title='" + linktext + "']")[0].click();
+                                }, "Fresh &amp; Chilled"</name>
+                            <title>I execute script function (linktext) {
+                                  document.querySelectorAll("[title='" + linktext + "']")[0].click();
+                                }, "Fresh &amp; Chilled"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812347349' status='passed' stop='1539812347442'>
+                            <name>I wait for element {"xpath":"//span[text()='Fresh Vegetables']"}, 5</name>
+                            <title>I wait for element {"xpath":"//span[text()='Fresh Vegetables']"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812347442' status='passed' stop='1539812347573'>
+                            <name>I execute script function (linktext) {
+                                  document.querySelectorAll("[title='" + linktext + "']")[0].click();
+                                }, "Fresh Vegetables"</name>
+                            <title>I execute script function (linktext) {
+                                  document.querySelectorAll("[title='" + linktext + "']")[0].click();
+                                }, "Fresh Vegetables"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812347573' status='passed' stop='1539812347661'>
+                            <name>I wait for element {"xpath":"//span[text()='Potatoes &amp; Sweet Potatoes']"}, 5</name>
+                            <title>I wait for element {"xpath":"//span[text()='Potatoes &amp; Sweet Potatoes']"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812347661' status='passed' stop='1539812348068'>
+                            <name>I execute script function (linktext) {
+                                  document.querySelectorAll("[title='" + linktext + "']")[0].click();
+                                }, "Potatoes &amp; Sweet Potatoes"</name>
+                            <title>I execute script function (linktext) {
+                                  document.querySelectorAll("[title='" + linktext + "']")[0].click();
+                                }, "Potatoes &amp; Sweet Potatoes"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812348068' status='passed' stop='1539812352733'>
+                    <name>productListPage: addPdtQtyByProductName </name>
+                    <title>productListPage: addPdtQtyByProductName </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812348068' status='passed' stop='1539812349085'>
+                            <name>I wait for element "xpath: //span[text()='Waitrose baby new potatoes']/following::input[1]", 5</name>
+                            <title>I wait for element "xpath: //span[text()='Waitrose baby new potatoes']/following::input[1]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812349085' status='passed' stop='1539812349533'>
+                            <name>I clear field "xpath: //span[text()='Waitrose baby new potatoes']/following::input[1]", "20"</name>
+                            <title>I clear field "xpath: //span[text()='Waitrose baby new potatoes']/following::input[1]", "20"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812349533' status='passed' stop='1539812350534'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812350534' status='passed' stop='1539812350899'>
+                            <name>I fill field "xpath: //span[text()='Waitrose baby new potatoes']/following::input[1]", "20"</name>
+                            <title>I fill field "xpath: //span[text()='Waitrose baby new potatoes']/following::input[1]", "20"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812350900' status='passed' stop='1539812351903'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812351903' status='passed' stop='1539812352333'>
+                            <name>I see in field "xpath: //span[text()='Waitrose baby new potatoes']/following::input[1]", "20"</name>
+                            <title>I see in field "xpath: //span[text()='Waitrose baby new potatoes']/following::input[1]", "20"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812352333' status='passed' stop='1539812352732'>
+                            <name>I click {xpath: //button[ancestor::*[starts-with(./@class, 'addToTrolley')]][@aria-label = 'Add Waitrose baby new potatoes to trolley']}</name>
+                            <title>I click {xpath: //button[ancestor::*[starts-with(./@class, 'addToTrolley')]][@aria-label = 'Add Waitrose baby new potatoes to trolley']}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812352733' status='passed' stop='1539812353781'>
+                    <name>groceriesPage: clickGroceriesMegamenu </name>
+                    <title>groceriesPage: clickGroceriesMegamenu </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812352733' status='passed' stop='1539812352821'>
+                            <name>I wait for element {"xpath":"//span[contains(@class,'name')]/following::button[contains(@class,'primary')]"}, 5</name>
+                            <title>I wait for element {"xpath":"//span[contains(@class,'name')]/following::button[contains(@class,'primary')]"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812352821' status='passed' stop='1539812352884'>
+                            <name>I wait for element "#site-header-browse-groceries", 5</name>
+                            <title>I wait for element "#site-header-browse-groceries", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812352884' status='passed' stop='1539812353682'>
+                            <name>I click "#site-header-browse-groceries"</name>
+                            <title>I click "#site-header-browse-groceries"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812353683' status='passed' stop='1539812353781'>
+                            <name>I wait for element {"xpath":"//article[contains(@class,'menuLinksList')]"}, 5</name>
+                            <title>I wait for element {"xpath":"//article[contains(@class,'menuLinksList')]"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812353781' status='passed' stop='1539812354918'>
+                    <name>groceriesPage: clickMegaMenuLink </name>
+                    <title>groceriesPage: clickMegaMenuLink </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812353781' status='passed' stop='1539812353848'>
+                            <name>I wait for element {"xpath":"//span[text()='Frozen']"}, 5</name>
+                            <title>I wait for element {"xpath":"//span[text()='Frozen']"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812353848' status='passed' stop='1539812354119'>
+                            <name>I execute script function (linktext) {
+                                  document.querySelectorAll("[title='" + linktext + "']")[0].click();
+                                }, "Frozen"</name>
+                            <title>I execute script function (linktext) {
+                                  document.querySelectorAll("[title='" + linktext + "']")[0].click();
+                                }, "Frozen"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812354119' status='passed' stop='1539812354202'>
+                            <name>I wait for element {"xpath":"//span[text()='Frozen Desserts']"}, 5</name>
+                            <title>I wait for element {"xpath":"//span[text()='Frozen Desserts']"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812354202' status='passed' stop='1539812354331'>
+                            <name>I execute script function (linktext) {
+                                  document.querySelectorAll("[title='" + linktext + "']")[0].click();
+                                }, "Frozen Desserts"</name>
+                            <title>I execute script function (linktext) {
+                                  document.querySelectorAll("[title='" + linktext + "']")[0].click();
+                                }, "Frozen Desserts"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812354331' status='passed' stop='1539812354531'>
+                            <name>I wait for element {"xpath":"//span[text()='Cheesecakes']"}, 5</name>
+                            <title>I wait for element {"xpath":"//span[text()='Cheesecakes']"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812354532' status='passed' stop='1539812354918'>
+                            <name>I execute script function (linktext) {
+                                  document.querySelectorAll("[title='" + linktext + "']")[0].click();
+                                }, "Cheesecakes"</name>
+                            <title>I execute script function (linktext) {
+                                  document.querySelectorAll("[title='" + linktext + "']")[0].click();
+                                }, "Cheesecakes"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812354918' status='passed' stop='1539812358766'>
+                    <name>productListPage: addPdtQtyByProductName </name>
+                    <title>productListPage: addPdtQtyByProductName </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812354918' status='passed' stop='1539812355392'>
+                            <name>I wait for element "xpath: //span[text()='Waitrose Frozen New York cheesecake']/following::input[1]", 5</name>
+                            <title>I wait for element "xpath: //span[text()='Waitrose Frozen New York cheesecake']/following::input[1]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812355392' status='passed' stop='1539812355755'>
+                            <name>I clear field "xpath: //span[text()='Waitrose Frozen New York cheesecake']/following::input[1]", "10"</name>
+                            <title>I clear field "xpath: //span[text()='Waitrose Frozen New York cheesecake']/following::input[1]", "10"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812355755' status='passed' stop='1539812356758'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812356758' status='passed' stop='1539812357117'>
+                            <name>I fill field "xpath: //span[text()='Waitrose Frozen New York cheesecake']/following::input[1]", "10"</name>
+                            <title>I fill field "xpath: //span[text()='Waitrose Frozen New York cheesecake']/following::input[1]", "10"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812357117' status='passed' stop='1539812358122'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812358122' status='passed' stop='1539812358459'>
+                            <name>I see in field "xpath: //span[text()='Waitrose Frozen New York cheesecake']/following::input[1]", "10"</name>
+                            <title>I see in field "xpath: //span[text()='Waitrose Frozen New York cheesecake']/following::input[1]", "10"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812358459' status='passed' stop='1539812358766'>
+                            <name>I click {xpath: //button[ancestor::*[starts-with(./@class, 'addToTrolley')]][@aria-label = 'Add Waitrose Frozen New York cheesecake to trolley']}</name>
+                            <title>I click {xpath: //button[ancestor::*[starts-with(./@class, 'addToTrolley')]][@aria-label = 'Add Waitrose Frozen New York cheesecake to trolley']}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812358766' status='passed' stop='1539812360314'>
+                    <name>sideBarPage: clickSlotDetails </name>
+                    <title>sideBarPage: clickSlotDetails </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812358766' status='passed' stop='1539812358859'>
+                            <name>I wait for element "#sb_1_tab", 5</name>
+                            <title>I wait for element "#sb_1_tab", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812358859' status='passed' stop='1539812359310'>
+                            <name>I click "#sb_1_tab"</name>
+                            <title>I click "#sb_1_tab"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812359310' status='passed' stop='1539812360314'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812360314' status='passed' stop='1539812360712'>
+                    <name>sideBarPage: selectCollectionSlot </name>
+                    <title>sideBarPage: selectCollectionSlot </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812360314' status='passed' stop='1539812360391'>
+                            <name>I wait for element "#bookCollectionSlot", 5</name>
+                            <title>I wait for element "#bookCollectionSlot", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812360391' status='passed' stop='1539812360712'>
+                            <name>I click "#bookCollectionSlot"</name>
+                            <title>I click "#bookCollectionSlot"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812360712' status='passed' stop='1539812361431'>
+                    <name>slotAddressComponentsPage: enterPostCodeForSlots </name>
+                    <title>slotAddressComponentsPage: enterPostCodeForSlots </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812360712' status='passed' stop='1539812360899'>
+                            <name>I wait for element "#newAddressPostcodeInput", 5</name>
+                            <title>I wait for element "#newAddressPostcodeInput", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812360899' status='passed' stop='1539812361258'>
+                            <name>I fill field "#newAddressPostcodeInput", "RG53HN"</name>
+                            <title>I fill field "#newAddressPostcodeInput", "RG53HN"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812361259' status='passed' stop='1539812361431'>
+                            <name>I click "GO"</name>
+                            <title>I click "GO"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812361431' status='passed' stop='1539812362206'>
+                    <name>slotAddressComponentsPage: selectAddressForSlots </name>
+                    <title>slotAddressComponentsPage: selectAddressForSlots </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812361431' status='passed' stop='1539812362010'>
+                            <name>I wait for element {"xpath":"//div[contains(@class,'addressContainer')][1]"}, 5</name>
+                            <title>I wait for element {"xpath":"//div[contains(@class,'addressContainer')][1]"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812362010' status='passed' stop='1539812362206'>
+                            <name>I click {"xpath":"//div[contains(@class,'addressContainer')][1]"}</name>
+                            <title>I click {"xpath":"//div[contains(@class,'addressContainer')][1]"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539812362209' status='undefined'>
+                    <name>Context: I </name>
+                    <title>Context: I </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539812362209' status='passed' stop='1539812362800'>
+                            <name>I am on page "/ecom/shop/trolley"</name>
+                            <title>I am on page "/ecom/shop/trolley"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812362800' status='passed' stop='1539812363581'>
+                            <name>I wait for element {"xpath":"//ul[contains(@class,'productList')][1]"}, 5</name>
+                            <title>I wait for element {"xpath":"//ul[contains(@class,'productList')][1]"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812363581' status='passed' stop='1539812363839'>
+                            <name>I click {"xpath":"//button[contains(@class,'emptyTrolleyButton')]"}</name>
+                            <title>I click {"xpath":"//button[contains(@class,'emptyTrolleyButton')]"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812363839' status='passed' stop='1539812363926'>
+                            <name>I wait for element {"xpath":"//button[contains(@class,'emptyTrolleyModalButton')]"}, 5</name>
+                            <title>I wait for element {"xpath":"//button[contains(@class,'emptyTrolleyModalButton')]"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812363926' status='passed' stop='1539812364150'>
+                            <name>I click "Confirm"</name>
+                            <title>I click "Confirm"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539812364150' status='passed' stop='1539812364505'>
+                            <name>I wait for text "0 trolley items", 5</name>
+                            <title>I wait for text "0 trolley items", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539967088999' stop='1539967089155'>
+    <name>Order:</name>
+    <title>Order:</title>
+    <test-cases>
+        <test-case start='1539967089000' status='failed' stop='1539967089153'>
+            <name>Place a Delivery Order</name>
+            <title>Place a Delivery Order</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't connect to WebDriver.
+                Error: A new session could not be created. Details: Appium's IosDriver does not support Xcode version 10.0. Apple has deprecated UIAutomation. Use the "XCUITest" automationName capability instead.
+                
+                Please make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible</message>
+                <stack-trace>Error: A new session could not be created. Details: Appium's IosDriver does not support Xcode version 10.0. Apple has deprecated UIAutomation. Use the "XCUITest" automationName capability instead.
+                    at new RuntimeError (/usr/local/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:143:12)
+                    at Request._callback (/usr/local/lib/node_modules/webdriverio/build/lib/utils/RequestHandler.js:316:39)
+                    at Request.self.callback (/usr/local/lib/node_modules/webdriverio/node_modules/request/request.js:185:22)
+                    at emitTwo (events.js:126:13)
+                    at Request.emit (events.js:214:7)
+                    at Request.&lt;anonymous> (/usr/local/lib/node_modules/webdriverio/node_modules/request/request.js:1161:10)
+                    at emitOne (events.js:116:13)
+                    at Request.emit (events.js:211:7)
+                    at IncomingMessage.&lt;anonymous> (/usr/local/lib/node_modules/webdriverio/node_modules/request/request.js:1083:12)
+                    at Object.onceWrapper (events.js:313:30)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

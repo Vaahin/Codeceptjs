@@ -1,0 +1,171 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539868162912' stop='1539868212107'>
+    <name>Order:</name>
+    <title>Order:</title>
+    <test-cases>
+        <test-case start='1539868162913' status='failed' stop='1539868198122'>
+            <name>Place a Delivery Order</name>
+            <title>Place a Delivery Order</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1539868178248' status='passed' stop='1539868179937'>
+                    <name>Context: Before </name>
+                    <title>Context: Before </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539868178248' status='passed' stop='1539868179936'>
+                            <name>I am on page "/"</name>
+                            <title>I am on page "/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539868179937' status='passed' stop='1539868182575'>
+                    <name>homePage: clickSignIn </name>
+                    <title>homePage: clickSignIn </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539868179937' status='passed' stop='1539868182575'>
+                            <name>I click {"xpath":"(//div[contains(@class,'account')]//following-sibling::a)[1]"}</name>
+                            <title>I click {"xpath":"(//div[contains(@class,'account')]//following-sibling::a)[1]"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539868182575' status='passed' stop='1539868185840'>
+                    <name>loginPage: removeMonetatePopUp </name>
+                    <title>loginPage: removeMonetatePopUp </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539868182576' status='passed' stop='1539868185159'>
+                            <name>I wait for element {"xpath":"(//div[contains(@class,'userLogonForm ')])[1]"}, 5</name>
+                            <title>I wait for element {"xpath":"(//div[contains(@class,'userLogonForm ')])[1]"}, 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539868185160' status='passed' stop='1539868185160'>
+                            <name>I is element visible "#monetate_lightbox"</name>
+                            <title>I is element visible "#monetate_lightbox"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539868185160' status='passed' stop='1539868185682'>
+                            <name>I wait for element "#monetate_lightbox", 5</name>
+                            <title>I wait for element "#monetate_lightbox", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539868185682' status='passed' stop='1539868185838'>
+                            <name>I execute script function () {
+                                    document.getElementById("monetate_lightbox").remove();
+                                  }</name>
+                            <title>I execute script function () {
+                                    document.getElementById("monetate_lightbox").remove();
+                                  }</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539868185840' status='passed' stop='1539868189659'>
+                    <name>loginPage: login </name>
+                    <title>loginPage: login </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539868185840' status='passed' stop='1539868186844'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539868186844' status='passed' stop='1539868187352'>
+                            <name>I fill field {"xpath":"input[type=email]"}, "sampletestlogin@wtr-test.net"</name>
+                            <title>I fill field {"xpath":"input[type=email]"}, "sampletestlogin@wtr-test.net"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539868187352' status='passed' stop='1539868187632'>
+                            <name>I click "Continue"</name>
+                            <title>I click "Continue"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539868187632' status='passed' stop='1539868187956'>
+                            <name>I wait for visible "#logon-password", 5</name>
+                            <title>I wait for visible "#logon-password", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539868187957' status='passed' stop='1539868188372'>
+                            <name>I fill field "#logon-password", "test1234"</name>
+                            <title>I fill field "#logon-password", "test1234"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539868188372' status='passed' stop='1539868189377'>
+                            <name>I wait 1</name>
+                            <title>I wait 1</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539868189377' status='passed' stop='1539868189641'>
+                            <name>I click "#logon-button-sign-in"</name>
+                            <title>I click "#logon-button-sign-in"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539868189659' status='passed' stop='1539868193117'>
+                    <name>homePage: clickShoppingLink </name>
+                    <title>homePage: clickShoppingLink </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539868189659' status='passed' stop='1539868192953'>
+                            <name>I wait for element "xpath: //a[contains(@class,'shopWindow') and contains(@href,'groceries') and not(contains(@href,'christmas'))]", 5</name>
+                            <title>I wait for element "xpath: //a[contains(@class,'shopWindow') and contains(@href,'groceries') and not(contains(@href,'christmas'))]", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1539868192953' status='passed' stop='1539868193117'>
+                            <name>I execute script function (menuLink) {
+                                  document.querySelectorAll("[alt='" + menuLink + "']")[0].click();
+                                }, "Groceries"</name>
+                            <title>I execute script function (menuLink) {
+                                  document.querySelectorAll("[alt='" + menuLink + "']")[0].click();
+                                }, "Groceries"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539868193117' status='failed' stop='1539868198122'>
+                    <name>groceriesPage: clickMobileShopMenu </name>
+                    <title>groceriesPage: clickMobileShopMenu </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539868193117' status='failed' stop='1539868198119'>
+                            <name>I wait for element "#site-header-browse-shop", 5</name>
+                            <title>I wait for element "#site-header-browse-shop", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='9b2efa63-39ad-4788-b259-9b03ffd889fb-attachment.png' type='image/png' size='2198904'/>
+            </attachments>
+            <failure>
+                <message>element (#site-header-browse-shop) still not present on page after 5 sec</message>
+                <stack-trace>Error: element (#site-header-browse-shop) still not present on page after 5 sec
+                    at new WaitUntilTimeoutError (/usr/local/lib/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:149:12)
+                    at /usr/local/lib/node_modules/webdriverio/build/lib/commands/waitUntil.js:29:19
+                    at &lt;anonymous></stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
